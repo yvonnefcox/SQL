@@ -1,0 +1,27 @@
+---Create a Lunch Cafe database
+
+CREATE TABLE store_items (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, shelf INTEGER, taxes TEXT);
+
+INSERT INTO store_items VALUES
+(1, "Brownies", 2, 3, "No"),
+(2, "Cake Pops", 3, 4, "No"),
+(3, "Soda", 1, 2, "Yes"),
+(4, "Hot Sandwiches", 8, 13, "Yes"),
+(5, "Burgers", 10, 13, "Yes"),
+(6, "Hot dogs", 5, 13, "Yes"),
+(7, "Soup", 5, 13, "Yes"),
+(8, "Smoothies", 8, 15, "Yes"),
+(9, "Milkshakes", 7, 15, "Yes"),
+(10, "Sorbet", 4, 15, "Yes"),
+(11, "Soft Serve", 4, 15, "Yes"),
+(12, "Hot Chocolate", 3, 17, "Yes"),
+(13, "Coffee", 3, 17, "Yes"),
+(14, "Latte", 5, 17, "Yes"),
+(15, "Macchiato", 5, 17, "Yes");
+
+--Display the Database
+SELECT * FROM store_items;
+
+
+--Disley the database of items by shelf location
+SELECT * FROM store_items ORDER BY shelf
